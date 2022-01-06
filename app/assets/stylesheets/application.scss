@@ -1,0 +1,25 @@
+@import "bootstrap/scss/bootstrap";
+
+.section-forms{
+    height: 100vh;
+    background: #ecf0f4;
+    >div{
+        height: 100%;
+    }
+    .section-forms__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .section-forms__card{
+        border-radius: 5px;
+        padding: 3em;
+        box-shadow: 0 0 0 1px #ced4da;
+        background-color: #ffffff;
+    }
+    .create-account{
+        padding: 15px 0;
+        border-top: 1px solid #ced4da;
+    }
+}
