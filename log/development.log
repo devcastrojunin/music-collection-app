@@ -7292,3 +7292,356 @@ Processing by ArtistsController#show as HTML
 Completed 200 OK in 446ms (Views: 54.7ms | ActiveRecord: 0.2ms | Allocations: 13733)
 
 
+Started GET "/artists/3" for ::1 at 2022-01-07 20:10:03 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 341)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 473)
+  Rendered partials/_footer.html.erb (Duration: 0.2ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 123.6ms | Allocations: 20363)
+Completed 200 OK in 43334ms (Views: 128.4ms | ActiveRecord: 0.9ms | Allocations: 141914)
+
+
+Started GET "/artists/3" for ::1 at 2022-01-07 20:10:49 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 5.7ms | Allocations: 360)
+  Rendered partials/_footer.html.erb (Duration: 0.4ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 9068)
+Completed 200 OK in 481ms (Views: 92.4ms | ActiveRecord: 1.1ms | Allocations: 20772)
+
+
+Started GET "/artists/3" for ::1 at 2022-01-07 20:11:07 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.8ms | Allocations: 354)
+  Rendered partials/_footer.html.erb (Duration: 0.2ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 9121)
+Completed 200 OK in 463ms (Views: 68.6ms | ActiveRecord: 0.3ms | Allocations: 13685)
+
+
+Started GET "/artists/3" for ::1 at 2022-01-07 20:12:05 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.9ms | Allocations: 354)
+  Rendered partials/_footer.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 9100)
+Completed 200 OK in 460ms (Views: 67.7ms | ActiveRecord: 0.2ms | Allocations: 13633)
+
+
+Started GET "/artists/3" for ::1 at 2022-01-07 20:13:17 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.7ms | Allocations: 317)
+  Rendered partials/_footer.html.erb (Duration: 0.5ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 9313)
+Completed 200 OK in 460ms (Views: 68.9ms | ActiveRecord: 0.2ms | Allocations: 13859)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:13:19 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.5ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 13388)
+Completed 200 OK in 492ms (Views: 67.3ms | ActiveRecord: 0.2ms | Allocations: 17161)
+
+
+Started GET "/artists/2" for ::1 at 2022-01-07 20:13:22 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 68)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 142)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 8005)
+Completed 200 OK in 443ms (Views: 52.1ms | ActiveRecord: 0.2ms | Allocations: 11491)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:13:24 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 5105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.5ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 13059)
+Completed 200 OK in 440ms (Views: 68.6ms | ActiveRecord: 0.2ms | Allocations: 16500)
+
+
+Started GET "/artists/4" for ::1 at 2022-01-07 20:13:26 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 8155)
+Completed 200 OK in 460ms (Views: 52.3ms | ActiveRecord: 0.2ms | Allocations: 11631)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:13:28 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 13015)
+Completed 200 OK in 440ms (Views: 68.5ms | ActiveRecord: 0.1ms | Allocations: 16457)
+
+
+Started GET "/artists/6" for ::1 at 2022-01-07 20:13:33 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 68)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 8001)
+Completed 200 OK in 433ms (Views: 53.0ms | ActiveRecord: 0.1ms | Allocations: 11461)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:14:10 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1194.4ms | Allocations: 71809)
+Completed 200 OK in 1559ms (Views: 1195.6ms | ActiveRecord: 0.3ms | Allocations: 75247)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:14:11 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 5105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 12971)
+Completed 200 OK in 483ms (Views: 68.2ms | ActiveRecord: 0.1ms | Allocations: 19374)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:14:20 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.8ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | Allocations: 13111)
+Completed 200 OK in 431ms (Views: 67.9ms | ActiveRecord: 0.2ms | Allocations: 16537)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:14:52 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Started GET "/artists/7" for ::1 at 2022-01-07 20:15:07 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 5111)
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 68)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1119.0ms | Allocations: 84015)
+Completed 200 OK in 16570ms (Views: 1120.5ms | ActiveRecord: 0.2ms | Allocations: 91270)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 87.3ms | Allocations: 23634)
+Completed 200 OK in 1196ms (Views: 88.8ms | ActiveRecord: 0.5ms | Allocations: 89104)
+
+
+Started GET "/artists/7" for ::1 at 2022-01-07 20:15:13 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 68)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 142)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 8000)
+Completed 200 OK in 447ms (Views: 52.4ms | ActiveRecord: 0.2ms | Allocations: 11451)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:15:16 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 5105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 65.6ms | Allocations: 12989)
+Completed 200 OK in 444ms (Views: 67.1ms | ActiveRecord: 0.2ms | Allocations: 16418)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:17:16 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 5527)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.7ms | Allocations: 354)
+  Rendered partials/_footer.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 1082.2ms | Allocations: 70833)
+Completed 200 OK in 1493ms (Views: 1085.9ms | ActiveRecord: 0.1ms | Allocations: 75151)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:17:20 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 5109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 12975)
+Completed 200 OK in 459ms (Views: 68.2ms | ActiveRecord: 0.2ms | Allocations: 16599)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:17:36 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 5104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 1135.5ms | Allocations: 68516)
+Completed 200 OK in 1500ms (Views: 1136.8ms | ActiveRecord: 0.2ms | Allocations: 71954)
+
+
+Started GET "/artists/3" for ::1 at 2022-01-07 20:17:40 -0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 142)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 8116)
+Completed 200 OK in 429ms (Views: 66.1ms | ActiveRecord: 0.2ms | Allocations: 11708)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:17:43 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 5108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 67.8ms | Allocations: 12974)
+Completed 200 OK in 441ms (Views: 69.2ms | ActiveRecord: 0.1ms | Allocations: 16416)
+
+
+Started GET "/" for ::1 at 2022-01-07 20:18:44 -0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 5106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partials/_header.html.erb (Duration: 0.3ms | Allocations: 156)
+  Rendered partials/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 12983)
+Completed 200 OK in 477ms (Views: 70.3ms | ActiveRecord: 0.2ms | Allocations: 16400)
+
+
