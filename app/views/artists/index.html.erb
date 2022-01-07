@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h1 class="default-title">All Artists</h1>
+    <% @artists.inspect %>
+    <div class="row cars-list">
+        <% @artists.each do |artist| %>
+            <% artist.each do |value| %>
+                    <div class="col-md-3 mb-4">
+                        <a href="artists/<%= value['id'] %>">
+                            <div class="card cars-list__item">
+                                <figure>
+                                    <img src="<%= image_path("album-open-svgrepo-com.svg") %>">
+                                    <div class="label-album">
+                                        See all albums
+                                    </div>
+                                </figure>  
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= value["name"] %></h5>
+                                    <%# <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> %>
+                                    Twitetr <a href="#" class="card-link"><strong><%= value["twitter"] %></strong></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            <% end %>
+        <% end %>
+    </div>
+</div>

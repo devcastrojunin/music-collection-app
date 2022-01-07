@@ -1,4 +1,6 @@
 class RegistrationsController < ApplicationController
+  layout "blank"
+  
   def new
     @user = User.new
   end
@@ -9,8 +11,9 @@ class RegistrationsController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect_to root_path
-      else
-       render :new  
+    else    
+      @user.errors.full_messages
+      render :new  
     end
   end
 
