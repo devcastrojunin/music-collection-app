@@ -233,3 +233,222 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 7321)
 
 
+Started GET "/sign_in" for ::1 at 2022-01-06 22:45:26 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.5ms | Allocations: 16610)
+Completed 200 OK in 104ms (Views: 102.9ms | ActiveRecord: 0.0ms | Allocations: 17136)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:46:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.0ms | Allocations: 13149)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms | Allocations: 13625)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:46:12 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 12963)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms | Allocations: 13436)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:51:16 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 4676)
+  Rendered layout layouts/application.html.erb (Duration: 96.4ms | Allocations: 9780)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms | Allocations: 13471)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 17:2 of app/assets/stylesheets/application.scss
+>>  @import "~bootstrap/scss/bootstrap";
+
+   -^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:17
+app/views/layouts/application.html.erb:9
+Started GET "/sign_in" for ::1 at 2022-01-06 22:55:36 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2145)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 12689f047f0a65cb76cd
+Version: webpack 4.46.0
+Time: 2719ms
+Built at: 06/01/2022 22:55:42
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-41ae4845284995041360.js    605 KiB  application  [emitted] [immutable]  application
+js/application-41ae4845284995041360.js.map    708 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-41ae4845284995041360.js js/application-41ae4845284995041360.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 512 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/js/bootstrap.esm.js
+Module not found: Error: Can't resolve '@popperjs/core' in 'E:\Projetos\pessoal\Ruby\music-collection-app\node_modules\bootstrap\dist\js'
+ @ ./node_modules/bootstrap/dist/js/bootstrap.esm.js 60:0-41 2356:17-23 2375:21-40 4029:15-21 4164:23-42
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 6060.2ms | Allocations: 90323)
+Completed 200 OK in 6062ms (Views: 6061.8ms | ActiveRecord: 0.0ms | Allocations: 90917)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:56:20 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1060.8ms | Allocations: 62841)
+Completed 200 OK in 1063ms (Views: 1062.0ms | ActiveRecord: 0.0ms | Allocations: 63422)
+
+
+Started GET "/sign_up" for ::1 at 2022-01-06 22:56:27 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 9786)
+Completed 200 OK in 68ms (Views: 58.8ms | ActiveRecord: 0.7ms | Allocations: 16570)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:56:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 9620)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.0ms | Allocations: 10164)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:57:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 9682)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms | Allocations: 10154)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:57:31 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 10085)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms | Allocations: 10557)
+
+
+Started GET "/sign_up" for ::1 at 2022-01-06 22:57:38 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 8539)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms | Allocations: 9035)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:57:44 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.5ms | Allocations: 9611)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 10083)
+
+
+Started GET "/sign_up" for ::1 at 2022-01-06 22:57:45 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 989)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 8538)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 9036)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:58:48 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 9610)
+Completed 200 OK in 55ms (Views: 54.8ms | ActiveRecord: 0.0ms | Allocations: 10082)
+
+
+Started POST "/sign_in" for ::1 at 2022-01-06 22:59:01 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"devcastrojunin", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "devcastrojunin"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 0.3ms | Allocations: 4397)
+
+
+Started GET "/" for ::1 at 2022-01-06 22:59:01 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 474)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 8299)
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.2ms | Allocations: 10503)
+
+
+Started DELETE "/logout" for ::1 at 2022-01-06 22:59:04 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1017)
+
+
+Started GET "/sign_in" for ::1 at 2022-01-06 22:59:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 9567)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.0ms | Allocations: 10054)
+
+
