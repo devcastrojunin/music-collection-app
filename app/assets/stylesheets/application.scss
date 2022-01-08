@@ -1,7 +1,11 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import "bootstrap/scss/bootstrap";
 @import "./alerts";
 @import "./header";
+
+.form-control{
+    appearance: auto;
+}
 
 h1{
     &.default-title{
@@ -37,11 +41,10 @@ h1{
 .cards-list{
     .cards-list__name{
         color: white;
-        font-size: 24px;
+        font-size: 16px;
         text-transform: uppercase;
-        margin-bottom: 15px;
         font-weight: 600;
-        line-height: 26px;
+        line-height: 20px;
         padding: 0 20px;
         text-align: center;
     }
@@ -60,18 +63,19 @@ h1{
         }
     }
     a{
-        color: black;
         text-decoration: none;
     }
     figure{
         background-color: black;
         width: 100%;
         height: 180px;
+        padding-bottom: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         overflow: hidden;
+        margin-bottom: 0;
 
         .label-album{
             position: absolute;
@@ -79,12 +83,15 @@ h1{
             left: 0;
             width: 100%;
             border-top: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: inherit;
+            transition: all 0.25s;
             
-            a, span.link{
+            a{
                 padding: 10px;
                 width: 100%;
                 height: 100%;
@@ -93,26 +100,35 @@ h1{
                 align-items: center;
                 color: #ffffff;
                 text-decoration: none;
+                i{
+                    position: relative;
+                    bottom: -2px;
+                    right: 0;
+                }
             }
             a + a{
                 border-left: 1px solid #ffffff;
             }
+    
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.4);
+            }
         }
 
         img{
-            width: 50px;
+            width: 30px;
             height: auto;
-            transition: all 0.25s;
         }
     }
-
-    .cards-list__item{
-        &:hover{
-            figure{
-                img{
-                    width: 60px;
-                }
-            }
+    .social-link{
+        color: #1DA1F2;
+        i{
+            font-size: 20px;
+            position: relative;
+            bottom: -3px;
+        }
+        a{
+            font-size: 12px;
         }
     }
 }
