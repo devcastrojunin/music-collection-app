@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 @import "bootstrap/scss/bootstrap";
 @import "./alerts";
 @import "./header";
@@ -33,7 +34,31 @@ h1{
     }
 }
 
-.cars-list{
+.cards-list{
+    .cards-list__name{
+        color: white;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: 600;
+        line-height: 26px;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .link-new{
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &.list-albums{
+        &, a{
+            color: #66377b;
+        }
+        figure{
+            background-color: #66377b;
+        }
+    }
     a{
         color: black;
         text-decoration: none;
@@ -53,10 +78,25 @@ h1{
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 10px;
             border-top: 2px solid #ffffff;
             color: #ffffff;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            a, span.link{
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            a + a{
+                border-left: 1px solid #ffffff;
+            }
         }
 
         img{
@@ -66,7 +106,7 @@ h1{
         }
     }
 
-    .cars-list__item{
+    .cards-list__item{
         &:hover{
             figure{
                 img{
