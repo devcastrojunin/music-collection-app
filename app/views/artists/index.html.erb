@@ -4,23 +4,26 @@
     <div class="row cards-list">
         <% @artists.each do |artist| %>
             <% artist.each do |value| %>
-                    <div class="col-md-3 mb-4">
-                        <a href="artists/<%= value['id'] %>">
+                    <div class="col-md-2 mb-4">
                             <div class="card cards-list__item">
                                 <figure>
                                     <img src="<%= image_path("album-open-svgrepo-com.svg") %>">
                                     <div class="label-album">
-                                        <span class="link">
-                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;See Albums
-                                        </span>
+                                        <a href="artists/<%= value['id'] %>">
+                                            See Albums&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </a>
                                     </div>
                                 </figure>  
                                 <div class="card-body">
                                     <h5 class="card-title"><%= value["name"] %></h5>
-                                    <strong>Twitter:</strong> <a target="_blank" href="https://twitter.com/<%= value['twitter'].gsub('@', '') %>" class="card-link"><%= value["twitter"] %></a>
+                                    <div class="social-link">
+                                        <a target="_blank" href="https://twitter.com/<%= remove_at_sign(value['twitter']) %>" class="card-link">
+                                            <i class="fa fa-twitter-square " aria-hidden="true"></i>
+                                            /<%= remove_at_sign(value['twitter']) %>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
                     </div>
             <% end %>
         <% end %>
