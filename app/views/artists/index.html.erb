@@ -5,6 +5,9 @@
             <% artist.each do |value| %>
                     <div class="col-md-2 mb-4">
                             <div class="card cards-list__item">
+                                <% if @count_albums.filter_artist_album(value['id']).length > 0 %>
+                                    <div class="flag-album"><%= @count_albums.filter_artist_album(value['id']).length %> album</div>                              
+                                <% end %>
                                 <figure>
                                     <img src="<%= image_path("album-open-svgrepo-com.svg") %>">
                                     <div class="label-album">
