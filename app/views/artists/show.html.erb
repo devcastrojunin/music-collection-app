@@ -1,4 +1,57 @@
 <div class="container mt-5">
-    <h1 class="default-title">All Albums of <%= @artists[0]["name"] %></h1>    
-    <%= link_to "Back", root_path %>
+    <% if notice %>
+        <div class="base-alert alert-info" role='alert'>
+          <%= notice %>
+        </div>
+    <% end %>
+
+    <h1 class="default-title d-flex justify-content-between align-items-center">
+      <span>All Albums of <%= @artists[0]["name"] %></span>          
+      <%= link_to '+ Add new Album', new_album_path, class: "btn btn-success btn-block" %>
+    </h1>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <%= link_to artists_path, class: "" do %>
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;Back
+            <% end %>
+        </div>
+    </div>
+    <% @artists.inspect %>
+    <div class="row cards-list list-albums">
+    <% if @albums.empty? %>
+      <div class="col-md-3 mb-4">
+        <h4>
+          Albums not found! <br>
+        </h4>
+        <%= link_to 'Click here to create a new album', new_album_path, class: "link-new" %>
+      </div>
+    <% end %>
+        <% @albums.each do |album| %>
+            <div class="col-md-2 mb-4">
+                <div class="card cards-list__item">
+                    <figure>
+                        <div class="cards-list__name"><%= album["album_name"] %></div>
+                        <div class="label-album">
+                            <%= link_to edit_album_path(album) do %>
+                              <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit
+                            <% end %>
+                            <% if Current.user.role_id === 1 %>
+                              <%= link_to album, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                                <i class="fa fa-trash" aria-hidden="true"></i></i>&nbsp;Delete
+                              <% end %>        
+                            <% end %>
+                        </div>
+                    </figure>  
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= @artist_service.get_by_id(album["artist"])[0]["name"] %>                      
+                        </h5> 
+                        <strong>Year: </strong><%= album["year"] %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
 </div>
+
+
