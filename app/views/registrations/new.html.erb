@@ -2,6 +2,8 @@
     <div class="container">
         <div class="row section-forms__box">
             <div class="col-4 section-forms__card">
+                <%= flash_message %>
+
                 <% if !@user.errors.full_messages.empty? %>
                     <div class="base-alert error" role='alert'>
                         <ul>
@@ -32,11 +34,8 @@
                         <%= f.password_field :password, class: "form-control" %>
                     </div>
 
-                    <div class="form-group mb-4">
+                    <div class="form-group">
                         <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
-                    </div>
-                    <div class="form-group create-account">
-                        Already have an account? <%= link_to "Login", sign_in_path %> 
                     </div>
                 <% end %>
             </div>
