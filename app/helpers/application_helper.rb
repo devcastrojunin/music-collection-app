@@ -11,6 +11,9 @@ module ApplicationHelper
 
     def remove_at_sign(str)
         str.gsub('@', '')
-    end
+    end 
     
+    def get_first_name(str)
+        str.split(' ')[0]
+    end 
 end
