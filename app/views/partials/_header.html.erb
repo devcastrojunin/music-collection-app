@@ -17,7 +17,7 @@
         <span class="user-info__name">
             Olá, <strong><%= Current.user.full_name %></strong>
         </span>
-        <%= button_to logout_path, {method: :delete, class: "btn btn-outline-light"}  do %>
+        <%= button_to logout_path, {method: :delete, class: "btn btn-sm btn-outline-light"}  do %>
           Sign Out&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i>
         <% end %>
         
