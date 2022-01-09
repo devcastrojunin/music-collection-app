@@ -8,4 +8,12 @@ module ApplicationHelper
         }
         messages.html_safe
     end
+
+    def remove_at_sign(str)
+        str.gsub('@', '')
+    end 
+    
+    def get_first_name(str)
+        str.split(' ')[0]
+    end 
 end
