@@ -65,6 +65,19 @@ h1{
     a{
         text-decoration: none;
     }
+    .flag-album {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #66377b;
+        color: white;
+        z-index: 10;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-left: none;
+        border-top: none;
+        border-radius: 0 0 3px 0;
+    }
     figure{
         background-color: black;
         width: 100%;
