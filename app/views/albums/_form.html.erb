@@ -11,7 +11,7 @@
 
   <div class="form-group mb-4">
       <%= form.label :artist %>
-      <%= form.text_field :artist, class: "form-control" %>
+      <%= form.select :artist, @artists.collect { |p| [ p[0]["name"], p[0]["id"] ] },  {}, {class: "form-control"} %>
   </div>
 
   <div class="form-group mb-4">

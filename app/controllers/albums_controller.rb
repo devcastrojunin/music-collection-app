@@ -1,6 +1,7 @@
 class AlbumsController < ApplicationController
   before_action :set_album, only: %i[ show edit update destroy ]
   before_action :user_is_logged
+  before_action :set_global_artists
 
   def index
     @albums = Album.all
@@ -11,14 +12,15 @@ class AlbumsController < ApplicationController
 
   def new
     @album = Album.new
+    @artists = @artist_service.get_all 
   end
 
   def edit
+    @artists = @artist_service.get_all
   end
 
   def create
     @album = Album.new(album_params)
-
     respond_to do |format|
       if @album.save
         format.html { redirect_to albums_url, notice: "Album was successfully created." }
@@ -69,5 +71,9 @@ class AlbumsController < ApplicationController
       if !Current.user
         redirect_to sign_in_path
       end    
+    end
+
+    def set_global_artists
+      @artist_service = ArtistService.new
     end
 end
