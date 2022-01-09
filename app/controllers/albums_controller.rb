@@ -2,6 +2,7 @@ class AlbumsController < ApplicationController
   before_action :set_album, only: %i[ show edit update destroy ]
   before_action :user_is_logged
   before_action :set_global_artists
+  before_action :get_all_artists
 
   def index
     @albums = Album.all
@@ -12,11 +13,9 @@ class AlbumsController < ApplicationController
 
   def new
     @album = Album.new
-    @artists = @artist_service.get_all 
   end
 
   def edit
-    @artists = @artist_service.get_all
   end
 
   def create
@@ -72,6 +71,11 @@ class AlbumsController < ApplicationController
         redirect_to sign_in_path
       end    
     end
+
+    def get_all_artists
+      @artists = @artist_service.get_all
+    end
+    
 
     def set_global_artists
       @artist_service = ArtistService.new
