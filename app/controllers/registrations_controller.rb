@@ -9,8 +9,8 @@ class RegistrationsController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      session[:user_id] = @user.id
-      redirect_to sign_in_path
+      flash[:notice] = "User was successfully created.<br/> Go to <a href='#{root_path}'>login page</a> to access app."
+      redirect_to sign_up_path
     else    
       @user.errors.full_messages
       render :new  
