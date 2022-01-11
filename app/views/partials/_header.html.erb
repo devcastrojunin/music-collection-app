@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <%= link_to "MApp", root_path, class: "navbar-brand logo" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to artists_url, class: "nav-link active" do %>
+            <i class="fa fa-user" aria-hidden="true"></i> Artists
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to albums_path, class: "nav-link active" do %>
+            <i class="fa fa-music" aria-hidden="true"></i> Albums
+          <% end %>
+        </li>
+      </ul>
+      <div class="user-info">
+        <span class="user-info__name">
+            Olá, <strong><%= get_first_name(Current.user.full_name) %></strong>
+        </span>
+        <%= button_to logout_path, {method: :delete, class: "btn btn-sm btn-outline-light"}  do %>
+          Sign Out&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i>
+        <% end %>
+        
+      </div>
+    </div>
+  </div>
+</nav>

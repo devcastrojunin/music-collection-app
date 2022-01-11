@@ -1,0 +1,44 @@
+<section class="section-forms">
+    <div class="container">
+        <div class="row section-forms__box">
+            <div class="col-4 section-forms__card">
+                <%= flash_message %>
+
+                <% if !@user.errors.full_messages.empty? %>
+                    <div class="base-alert error" role='alert'>
+                        <ul>
+                            <% @user.errors.full_messages.each do |item| %>
+                                <li><%= item %></li>
+                            <% end %>                  
+                        </ul>
+                    </div>
+                <% end %>
+
+
+                <h1 class="h3 mb-3 font-weight-normal">Create your account</h1>
+                <%= form_with model: @user, url: sign_up_path do |f|  %>
+                    <div class="form-group mb-4">
+                        <%= f.label :Full_name, "*Fullname" %>
+                        <%= f.text_field :full_name, class: "form-control" %>
+                    </div>
+                    <div class="form-group mb-4">
+                        <%= f.label :Username, "*Username" %>
+                        <%= f.text_field :username, class: "form-control" %>
+                    </div>
+                    <div class="form-group mb-4">
+                        <%= f.label :Role, "*Role" %>
+                        <%= f.select :role_id, [["Admin", "1"], ["User", "2"]], {selected: "2"}, {class: "form-control"} %>
+                    </div>
+                    <div class="form-group mb-4">
+                        <%= f.label :Password, "*Password" %>
+                        <%= f.password_field :password, class: "form-control" %>
+                    </div>
+
+                    <div class="form-group">
+                        <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>

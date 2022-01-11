@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <h1 class="default-title">All Artists</h1>
+    <div class="row cards-list">
+        <% @artists.each do |artist| %>
+            <% artist.each do |value| %>
+                    <div class="col-md-2 mb-4">
+                            <div class="card cards-list__item">
+                                <% if @count_albums.filter_artist_album(value['id']).length > 0 %>
+                                    <div class="flag-album"><%= @count_albums.filter_artist_album(value['id']).length %> album</div>                              
+                                <% end %>
+                                <figure>
+                                    <img src="<%= image_path("album-open-svgrepo-com.svg") %>">
+                                    <div class="label-album">
+                                        <a href="artists/<%= value['id'] %>">
+                                            See Albums&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </figure>  
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= value["name"] %></h5>
+                                    <div class="social-link">
+                                        <a target="_blank" href="https://twitter.com/<%= remove_at_sign(value['twitter']) %>" class="card-link">
+                                            <i class="fa fa-twitter-square " aria-hidden="true"></i>
+                                            /<%= remove_at_sign(value['twitter']) %>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            <% end %>
+        <% end %>
+    </div>
+</div>
