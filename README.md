@@ -22,18 +22,6 @@ This repository is part of the project music app, a [chalenge of Moat Builders](
   </tr>
 </table>
 
-## Live application
-
-See [DEMO](https://still-ridge-76938.herokuapp.com/sign_up) and follow steps below.
-
-- Create a new user(admin or user)
-- Login in application in [login page](https://still-ridge-76938.herokuapp.com/sign_in)
-
-
-You can access the Artists and Albums pages in menu links.
-
-
-
 ## Configuration
 
 ```bash
