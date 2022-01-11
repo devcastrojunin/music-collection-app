@@ -1,24 +1,54 @@
-# README
+# Music APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository is part of the project music app, a [chalenge of Moat Builders](https://gitlab.com/-/snippets/2167416)
+<table>
+  <tr>
+    <td>Ruby version</td>
+    <td>
+      3.0.2
+    </td>
+  </tr>
+  <tr>
+    <td>Rails version</td>
+    <td>
+      6.1.4.4
+    </td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>
+      PostgreSQL
+    </td>
+  </tr>
+</table>
 
-Things you may want to cover:
+## Configuration
 
-* Ruby version
+```bash
+git clone https://github.com/devcastrojunin/music-collection-app
 
-* System dependencies
+# installation of dependencies
+bundle install
 
-* Configuration
+# creation of database and tables
+rails db:create
+rails db:migrate
+rails db:migrate RAILS_ENV=test
 
-* Database creation
+# To create roles(user and admin)
+rails db:seed
 
-* Database initialization
+# run the project
+rails s
+```
 
-* How to run the test suite
+The app is available at `http://localhost:3000`.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Tests
 
-* ...
+To run the tests:
+
+```bash
+rspec
+```
