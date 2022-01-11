@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2022_01_08_174230) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "albums", force: :cascade do |t|
     t.string "artist"
     t.string "album_name"
@@ -30,7 +33,7 @@ ActiveRecord::Schema.define(version: 2022_01_08_174230) do
     t.string "full_name"
     t.string "username"
     t.string "password_digest"
-    t.integer "role_id", null: false
+    t.bigint "role_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["role_id"], name: "index_users_on_role_id"
