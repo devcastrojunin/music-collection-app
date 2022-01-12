@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find(username: params[:username])
+    user = User.find_by(username: params[:username])
     
 
     if user.present? && user.authenticate(params[:password])
