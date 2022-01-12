@@ -22,6 +22,9 @@ This repository is part of the project music app, a [chalenge of Moat Builders](
   </tr>
 </table>
 
+## Screens
+See page flow [here](https://www.dropbox.com/s/gnmsypb2seusr36/2022-01-12_09h26_35.gif)
+
 ## Configuration
 
 ```bash
